@@ -73,7 +73,6 @@ function Index() {
         <Portfolio />
         <Benefits />
         <Process />
-        <Testimonials />
         <CTA />
       </main>
       <Footer />
@@ -96,7 +95,6 @@ function Nav() {
             <a href="#portfolio" className="hover:text-foreground transition-colors">Portfólio</a>
             <a href="#beneficios" className="hover:text-foreground transition-colors">Benefícios</a>
             <a href="#processo" className="hover:text-foreground transition-colors">Processo</a>
-            <a href="#depoimentos" className="hover:text-foreground transition-colors">Clientes</a>
           </div>
           <a
             href={WHATSAPP_URL}
