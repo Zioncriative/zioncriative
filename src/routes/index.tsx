@@ -25,7 +25,7 @@ export const Route = createFileRoute("/")({
   component: Index,
 });
 
-const WHATSAPP_URL = "https://wa.me/5581987038470?text=Ol%C3%A1%21%20Quero%20um%20site%20com%20a%20Zion%20Criative.";
+const WHATSAPP_URL = "https://wa.me/5581987038470?text=ol%C3%A1%2C%20vim%20pelo%20site%20e%20preciso%20de%20ajuda.";
 
 const services = [
   { icon: Code2, title: "Criação de Sites", desc: "Sites institucionais e corporativos com performance, SEO e design premium para construir autoridade." },
