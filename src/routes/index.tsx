@@ -129,8 +129,8 @@ function Hero() {
           Agência digital • Atendemos todo o Brasil
         </div>
         <h1 className="text-5xl sm:text-6xl md:text-7xl font-bold tracking-tight leading-[1.05] max-w-4xl mx-auto">
-          Sites premium que vendem
-          <span className="block text-gradient">como uma startup bilionária.</span>
+          Sites institucionais premium que transmitem
+          <span className="block text-gradient">autoridade e credibilidade.</span>
         </h1>
         <p className="mt-8 text-lg text-muted-foreground max-w-2xl mx-auto">
           Criação, redesign e lançamentos digitais para empresas que querem
