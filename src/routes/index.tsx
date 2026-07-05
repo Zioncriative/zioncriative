@@ -60,7 +60,12 @@ const testimonials = [
   { name: "Diego Almeida", role: "Infoprodutor", text: "Estruturaram meu lançamento do zero. Página, integrações, tudo redondo. Faturei 6 dígitos na primeira semana." },
 ];
 
-const brands = ["NEXUS", "ORBITA", "LUMEN", "VANTAGE", "ASCEND", "MERIDIAN", "QUANTUM", "ATLAS"];
+const brands = [
+  "Ateliê Rosinha Luna",
+  "Alexsandra Pereira Nutricionista",
+  "Marcelino Consultor",
+  "Ednalva Feitosa Advogada",
+];
 
 function Index() {
   return (
