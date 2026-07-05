@@ -17,7 +17,7 @@ import {
   MessageCircle,
 } from "lucide-react";
 import heroBg from "@/assets/hero-bg.jpg";
-import portfolio1 from "@/assets/portfolio-1.jpg";
+import portfolio1Asset from "@/assets/ednalva.png.asset.json";
 import portfolio2 from "@/assets/portfolio-2.jpg";
 import portfolio3 from "@/assets/portfolio-3.jpg";
 
@@ -42,7 +42,7 @@ const benefits = [
 ];
 
 const portfolio = [
-  { img: portfolio1, tag: "SaaS", title: "Plataforma B2B", desc: "Site institucional + dashboard" },
+  { img: portfolio1Asset.url, tag: "Advocacia", title: "Ednalva Feitoza Advogada", desc: "Site institucional + identidade" },
   { img: portfolio2, tag: "E-commerce", title: "Loja Premium", desc: "Catálogo e checkout otimizado" },
   { img: portfolio3, tag: "Lançamento", title: "Produto Digital", desc: "Landing + funil completo" },
 ];
@@ -169,7 +169,7 @@ function Hero() {
               <span className="ml-3 text-xs text-muted-foreground">zioncriative.com</span>
             </div>
             <img
-              src={portfolio1}
+              src={portfolio1Asset.url}
               alt="Mockup de site premium criado pela Zion Criative"
               loading="lazy"
               width={1200}
