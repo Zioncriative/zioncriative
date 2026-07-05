@@ -40,7 +40,7 @@ const processSteps = [
   { icon: 'rocket', step: '04', title: 'Lançamento', desc: 'Publicamos, otimizamos e acompanhamos os resultados.' },
 ];
 
-const brands = ['NEXUS','ORBITA','LUMEN','VANTAGE','ASCEND','MERIDIAN','QUANTUM','ATLAS'];
+const brands = ['Ateliê Rosinha Luna','Alexsandra Pereira Nutricionista','Marcelino Consultor','Ednalva Feitosa Advogada'];
 
 function renderServices() {
   document.getElementById('services-grid').innerHTML = services.map(s => `
