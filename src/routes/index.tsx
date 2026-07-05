@@ -18,7 +18,7 @@ import {
 } from "lucide-react";
 import heroBg from "@/assets/hero-bg.jpg";
 import portfolio1Asset from "@/assets/ednalva.png.asset.json";
-import portfolio2 from "@/assets/portfolio-2.jpg";
+import portfolio2Asset from "@/assets/alexsandra.jpeg.asset.json";
 import portfolio3 from "@/assets/portfolio-3.jpg";
 
 export const Route = createFileRoute("/")({
@@ -43,7 +43,7 @@ const benefits = [
 
 const portfolio = [
   { img: portfolio1Asset.url, tag: "Advocacia", title: "Ednalva Feitoza Advogada", desc: "Site institucional + identidade" },
-  { img: portfolio2, tag: "E-commerce", title: "Loja Premium", desc: "Catálogo e checkout otimizado" },
+  { img: portfolio2Asset.url, tag: "Nutricionista", title: "Alexsandra Pereira", desc: "Site institucional + presença digital" },
   { img: portfolio3, tag: "Lançamento", title: "Produto Digital", desc: "Landing + funil completo" },
 ];
 
