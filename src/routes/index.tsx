@@ -1,4 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { useEffect, useState } from "react";
 import {
   ArrowRight,
   Code2,
@@ -75,7 +76,6 @@ function Index() {
         <Hero />
         <Brands />
         <Services />
-        <Portfolio />
         <Benefits />
         <Process />
         <CTA />
@@ -116,6 +116,16 @@ function Nav() {
 }
 
 function Hero() {
+  const slides = [
+    { img: portfolio1Asset.url, title: "Ednalva Feitoza Advogada" },
+    { img: portfolio2Asset.url, title: "Alexsandra Pereira" },
+    { img: portfolio3, title: "Lançamento Produto Digital" },
+  ];
+  const [current, setCurrent] = useState(0);
+  useEffect(() => {
+    const id = setInterval(() => setCurrent((c) => (c + 1) % slides.length), 4000);
+    return () => clearInterval(id);
+  }, [slides.length]);
   return (
     <section id="top" className="relative overflow-hidden pt-40 pb-32">
       <div className="absolute inset-0 bg-hero" />
@@ -168,14 +178,31 @@ function Hero() {
               <span className="size-2.5 rounded-full bg-primary/70" />
               <span className="ml-3 text-xs text-muted-foreground">zioncriative.com</span>
             </div>
-            <img
-              src={portfolio1Asset.url}
-              alt="Mockup de site premium criado pela Zion Criative"
-              loading="lazy"
-              width={1200}
-              height={900}
-              className="w-full"
-            />
+            <div className="relative w-full aspect-[4/3] overflow-hidden bg-background">
+              {slides.map((s, i) => (
+                <img
+                  key={s.img}
+                  src={s.img}
+                  alt={s.title}
+                  loading={i === 0 ? "eager" : "lazy"}
+                  className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ${
+                    i === current ? "opacity-100" : "opacity-0"
+                  }`}
+                />
+              ))}
+              <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2 z-10">
+                {slides.map((_, i) => (
+                  <button
+                    key={i}
+                    aria-label={`Ir para slide ${i + 1}`}
+                    onClick={() => setCurrent(i)}
+                    className={`h-2 rounded-full transition-all ${
+                      i === current ? "w-8 bg-primary" : "w-2 bg-muted-foreground/50"
+                    }`}
+                  />
+                ))}
+              </div>
+            </div>
           </div>
         </div>
       </div>
