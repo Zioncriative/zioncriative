@@ -21,6 +21,7 @@ import heroBg from "@/assets/hero-bg.jpg";
 import portfolio1Asset from "@/assets/ednalva.png.asset.json";
 import portfolio2Asset from "@/assets/alexsandra.jpeg.asset.json";
 import portfolio3 from "@/assets/portfolio-3.jpg";
+import portfolio4Asset from "@/assets/rosinha-luna.png.asset.json";
 
 export const Route = createFileRoute("/")({
   component: Index,
@@ -120,6 +121,7 @@ function Hero() {
     { img: portfolio1Asset.url, title: "Ednalva Feitoza Advogada" },
     { img: portfolio2Asset.url, title: "Alexsandra Pereira" },
     { img: portfolio3, title: "Lançamento Produto Digital" },
+    { img: portfolio4Asset.url, title: "Ateliê Rosinha Luna" },
   ];
   const [current, setCurrent] = useState(0);
   useEffect(() => {
@@ -178,19 +180,33 @@ function Hero() {
               <span className="size-2.5 rounded-full bg-primary/70" />
               <span className="ml-3 text-xs text-muted-foreground">zioncriative.com</span>
             </div>
-            <div className="relative w-full aspect-[4/3] overflow-hidden bg-background">
-              {slides.map((s, i) => (
-                <img
-                  key={s.img}
-                  src={s.img}
-                  alt={s.title}
-                  loading={i === 0 ? "eager" : "lazy"}
-                  className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ${
-                    i === current ? "opacity-100" : "opacity-0"
-                  }`}
-                />
-              ))}
-              <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2 z-10">
+            <div className="relative w-full p-4 bg-background">
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+                {slides.map((s, i) => (
+                  <button
+                    key={s.img}
+                    onClick={() => setCurrent(i)}
+                    className={`relative aspect-[4/3] rounded-xl overflow-hidden transition-all duration-500 ${
+                      i === current
+                        ? "ring-2 ring-primary scale-[1.02] shadow-lg"
+                        : "opacity-70 hover:opacity-100"
+                    }`}
+                  >
+                    <img
+                      src={s.img}
+                      alt={s.title}
+                      loading={i === 0 ? "eager" : "lazy"}
+                      className="absolute inset-0 w-full h-full object-cover"
+                    />
+                    <div className={`absolute bottom-0 inset-x-0 py-2 px-3 text-xs font-semibold text-white bg-gradient-to-t from-black/70 to-transparent transition-opacity ${
+                      i === current ? "opacity-100" : "opacity-0"
+                    }`}>
+                      {s.title}
+                    </div>
+                  </button>
+                ))}
+              </div>
+              <div className="flex justify-center mt-4 gap-2">
                 {slides.map((_, i) => (
                   <button
                     key={i}
