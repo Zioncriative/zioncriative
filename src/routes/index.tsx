@@ -20,7 +20,7 @@ import {
 import heroBg from "@/assets/hero-bg.jpg";
 import portfolio1Asset from "@/assets/ednalva.png.asset.json";
 import portfolio2Asset from "@/assets/alexsandra.jpeg.asset.json";
-import portfolio3 from "@/assets/portfolio-3.jpg";
+import portfolio3Asset from "@/assets/marcelino.png.asset.json";
 import portfolio4Asset from "@/assets/rosinha-luna.png.asset.json";
 
 export const Route = createFileRoute("/")({
@@ -46,7 +46,7 @@ const benefits = [
 const portfolio = [
   { img: portfolio1Asset.url, tag: "Advocacia", title: "Ednalva Feitoza Advogada", desc: "Site institucional + identidade" },
   { img: portfolio2Asset.url, tag: "Nutricionista", title: "Alexsandra Pereira", desc: "Site institucional + presença digital" },
-  { img: portfolio3, tag: "Lançamento", title: "Produto Digital", desc: "Landing + funil completo" },
+  { img: portfolio3Asset.url, tag: "Consultoria", title: "Marcelino Consultor", desc: "Site institucional + presença digital" },
 ];
 
 const process = [
