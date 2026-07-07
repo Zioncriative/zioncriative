@@ -196,7 +196,7 @@ function Hero() {
                       src={s.img}
                       alt={s.title}
                       loading={i === 0 ? "eager" : "lazy"}
-                      className="absolute inset-0 w-full h-full object-cover"
+                      className="absolute inset-0 w-full h-full object-contain bg-background"
                     />
                     <div className={`absolute bottom-0 inset-x-0 py-2 px-3 text-xs font-semibold text-white bg-gradient-to-t from-black/70 to-transparent transition-opacity ${
                       i === current ? "opacity-100" : "opacity-0"
