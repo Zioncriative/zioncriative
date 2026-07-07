@@ -120,7 +120,7 @@ function Hero() {
   const slides = [
     { img: portfolio1Asset.url, title: "Ednalva Feitoza Advogada" },
     { img: portfolio2Asset.url, title: "Alexsandra Pereira" },
-    { img: portfolio3, title: "Lançamento Produto Digital" },
+    { img: portfolio3Asset.url, title: "Marcelino Consultor" },
     { img: portfolio4Asset.url, title: "Ateliê Rosinha Luna" },
   ];
   const [current, setCurrent] = useState(0);
