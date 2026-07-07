@@ -21,6 +21,7 @@ import heroBg from "@/assets/hero-bg.jpg";
 import portfolio1Asset from "@/assets/ednalva.png.asset.json";
 import portfolio2Asset from "@/assets/alexsandra.jpeg.asset.json";
 import portfolio3 from "@/assets/portfolio-3.jpg";
+import portfolio4Asset from "@/assets/rosinha-luna.png.asset.json";
 
 export const Route = createFileRoute("/")({
   component: Index,
