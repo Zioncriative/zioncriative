@@ -28,9 +28,10 @@ const benefits = [
 ];
 
 const portfolio = [
-  { img: 'assets/portfolio-1.jpg', tag: 'SaaS', title: 'Plataforma B2B', desc: 'Site institucional + dashboard' },
-  { img: 'assets/portfolio-2.jpg', tag: 'E-commerce', title: 'Loja Premium', desc: 'Catálogo e checkout otimizado' },
-  { img: 'assets/portfolio-3.jpg', tag: 'Lançamento', title: 'Produto Digital', desc: 'Landing + funil completo' },
+  { img: 'assets/ednalva.png', tag: 'Advocacia', title: 'Ednalva Feitoza Advogada', desc: 'Site institucional + identidade' },
+  { img: 'assets/alexsandra.jpeg', tag: 'Nutricionista', title: 'Alexsandra Pereira', desc: 'Site institucional + presença digital' },
+  { img: 'assets/marcelino.png', tag: 'Consultoria', title: 'Marcelino Consultor', desc: 'Site institucional + presença digital' },
+  { img: 'assets/rosinha-luna.png', tag: 'Ateliê', title: 'Ateliê Rosinha Luna', desc: 'Identidade digital + presença online' },
 ];
 
 const processSteps = [
