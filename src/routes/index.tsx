@@ -18,10 +18,10 @@ import {
   MessageCircle,
 } from "lucide-react";
 import heroBg from "@/assets/hero-bg.jpg";
-import portfolio1Asset from "@/assets/ednalva.png.asset.json";
-import portfolio2Asset from "@/assets/alexsandra.jpeg.asset.json";
-import portfolio3Asset from "@/assets/marcelino.png.asset.json";
-import portfolio4Asset from "@/assets/rosinha-luna.png.asset.json";
+const portfolio1Asset = { url: "/assets/ednalva.png" };
+const portfolio2Asset = { url: "/assets/alexsandra.jpeg" };
+const portfolio3Asset = { url: "/assets/marcelino.png" };
+const portfolio4Asset = { url: "/assets/rosinha-luna.png" };
 
 export const Route = createFileRoute("/")({
   component: Index,
